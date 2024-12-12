@@ -27,7 +27,7 @@ public class LibraryService {
      * 4. category1과 book1, book2 을 연결합니다. * 메모리내 객체 상태 동기화를 위해 Non-Owning 사이드(Category)에도 추가
      * 5. category1 저장 * Cascade 설정을 활용해 Category 저장 시 Book도 함께 저장
      * ----------------------------------------------------------------
-     * 조건: Category,BB 의 Setter 는 사용하지 않도록 합니다.
+     * 조건: Category,Book 의 Setter 는 사용하지 않도록 합니다.
      */
     @Transactional
     public void addCategoryWithBooks(String categoryName, String bookTitle1, String bookTitle2) {
